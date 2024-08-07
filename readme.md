@@ -1,10 +1,10 @@
-#Client Referral Automation System with Realtime Monitoring Spreadsheets
+#Client Referral Automation System with Realtime Monitoring Spreadsheets#
 
-##Overview
+##Overview##
 
 This project is an Automated Spreadsheet Client Referral Automation System designed to streamline and automate the process of client referrals and monitoring across various hospitals. The system includes real-time updates, duplicate entry detection, and automated budget adjustments for each hospital.
 
-##Features
+##Features##
 
 - **Automated Client Referrals**: Automatically processes client referrals and updates hospital-specific spreadsheets.
 - **Real-Time Monitoring**: Provides real-time updates to the main office.
@@ -14,7 +14,7 @@ This project is an Automated Spreadsheet Client Referral Automation System desig
 - **Referral Letter Generation**: Generates referral letters for clients.
 - **Status-Based Row Deletion**: Deletes marked patients and refunds the referred budget taken from the monitoring sheets.
 
-##Technology Stack
+##Technology Stack##
 
 - `Google Drive`: Storage for all documents and templates.
 - `Google Sheets`: Central and individual monitoring sheets for hospitals.
@@ -23,7 +23,8 @@ This project is an Automated Spreadsheet Client Referral Automation System desig
 - `Google Apps Script`: Automation of data processing and management.
 - `JSON`: Directory of hospitals with their respective monitoring sheets and budgets.
 
-##Usage
+##Usage##
+
 1. **Form Submission:**
 
 - Clients submit their data via Google Forms.
