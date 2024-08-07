@@ -1,10 +1,10 @@
-#Client Referral Automation System with Realtime Monitoring Spreadsheets#
+# Client Referral Automation System with Realtime Monitoring Spreadsheets
 
-##Overview##
+## Overview
 
 This project is an Automated Spreadsheet Client Referral Automation System designed to streamline and automate the process of client referrals and monitoring across various hospitals. The system includes real-time updates, duplicate entry detection, and automated budget adjustments for each hospital.
 
-##Features##
+## Features
 
 - **Automated Client Referrals**: Automatically processes client referrals and updates hospital-specific spreadsheets.
 - **Real-Time Monitoring**: Provides real-time updates to the main office.
@@ -14,7 +14,7 @@ This project is an Automated Spreadsheet Client Referral Automation System desig
 - **Referral Letter Generation**: Generates referral letters for clients.
 - **Status-Based Row Deletion**: Deletes marked patients and refunds the referred budget taken from the monitoring sheets.
 
-##Technology Stack##
+## Technology Stack
 
 - `Google Drive`: Storage for all documents and templates.
 - `Google Sheets`: Central and individual monitoring sheets for hospitals.
@@ -23,7 +23,7 @@ This project is an Automated Spreadsheet Client Referral Automation System desig
 - `Google Apps Script`: Automation of data processing and management.
 - `JSON`: Directory of hospitals with their respective monitoring sheets and budgets.
 
-##Usage##
+## Usage
 
 1. **Form Submission:**
 
@@ -45,7 +45,7 @@ This project is an Automated Spreadsheet Client Referral Automation System desig
 
 - All processed data is sent to the main office for documentation and record-keeping.
 
-##Global Variables and Sheets
+## Global Variables and Sheets
 
 - **Main Sheets:**
 
@@ -66,7 +66,7 @@ Each region has a JSON file that contains hospital data, such as IDs and control
 
 `user_input`, `region`, `range`, `mainsheet_data`, `mainsheet_data_rb`: Variables to handle user inputs and data ranges for processing.
 
-##Key Functions##
+## Key Functions
 
 - `onOpen()`: Adds a custom menu to the Google Sheets UI to sort data and sheets.
 - `createHospitalMap(data, count, regionPrefix)`: Creates a map of hospital data based on the region.
@@ -76,7 +76,7 @@ Each region has a JSON file that contains hospital data, such as IDs and control
 - `dataToRespectiveSheets(controlNumber, googleDocLink, valuesToPopulate_main, valuesToPopulate_rb)`: Populates the data ranges for respective regions and individual spreadsheets.
 - `dataToIndividualSpreadsheet(valuesToPopulate_main, valuesToPopulate_rb)`: Populates individual hospital sheets with the data.
 
-##Installation##
+## Installation
 
 To set up this project, follow these steps:
 
@@ -99,11 +99,11 @@ To set up this project, follow these steps:
 
 - Ensure the JSON file contains the correct directory of hospitals and their respective monitoring sheets.
 
-##Contributing##
+## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
-##License##
+## License
 This project is licensed under the MIT License.
 
-##Contact##
+## Contact
 For any inquiries or support, please contact deanferrazzini@gmail.com.
