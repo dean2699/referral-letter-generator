@@ -1,84 +1,63 @@
-Client Referral Automation System
-with Realtime Monitoring Spreadsheets for Hospital Budget.
-This project is a comprehensive web application designed to automate client referrals and feedback collection across multiple hospitals. It leverages Google Apps Script, Google Sheets, Google Docs, and a JSON file to manage and process data efficiently. The system provides real-time updates and automates report generation, streamlining the workflow for hospital staff and the main office.
+Client Referral Automation System with Realtime Monitoring Spreadsheets
+Overview
+This project is an Automated Spreadsheet Client Referral Automation System designed to streamline and automate the process of client referrals and monitoring across various hospitals. The system includes real-time updates, duplicate entry detection, and automated budget adjustments for each hospital.
 
-Table of Contents
 Features
-Setup
-Usage
-File Descriptions
-Technical Details
-Screenshots
-Contributing
-License
-Features
-
-Automated Data Sorting: Automatically sorts client referral data into specific hospital sheets.
-Duplicate Detection: Identifies and handles duplicate entries in the data.
-Budget Management: Tracks and adjusts budgets for each hospital based on client referrals.
-Referral Letter Generation: Automatically generates referral letters for clients to use at hospitals.
-Real-Time Updates: Sends updates to the main office in real-time.
-
-Setup
-Prerequisites
-A Google account with access to Google Sheets, Google Docs, and Google Drive.
-Basic knowledge of Google Apps Script.
-
+Automated Client Referrals: Automatically processes client referrals and updates hospital-specific spreadsheets.
+Real-Time Monitoring: Provides real-time updates to the main office.
+Duplicate Detection: Identifies and manages duplicate entries.
+Budget Management: Adjusts hospital budgets based on client referrals.
+Data Sorting: Sorts data by region and transfers relevant information to individual hospital sheets.
+Referral Letter Generation: Generates referral letters for clients.
+Multi-language Support: Supports English and Filipino.
+User-Friendly Interface: Mobile-friendly design with centered and justified text.
+Technologies Used
+HTML
+CSS
+JavaScript
+Google Apps Script
+Google Docs
+Google Sheets
+Google Drive
+Google Forms
 Installation
-Clone the repository:
-```bash git clone https://github.com/yourusername/referral-automation-system.git```
-
-Set up Google Apps Script:
-
-Open Google Sheets and create a new spreadsheet.
-Go to Extensions > Apps Script.
-Copy and paste the code from the code.gs file into the script editor.
-Save and name the project.
-Configure JSON File:
-
-Upload the JSON file containing hospital information to Google Drive.
-Note the file ID for use in the script.
-Set up Properties:
-
-Go to File > Project properties > Script properties.
-Add script properties for each hospital with the following format:
-hospital_name_id: The ID of the hospital's Google Sheet.
-hospital_name_cn: The control number prefix for the hospital.
-hospital_name_lastNum: The last used control number.
+Clone the Repository:
+```bash git clone https://github.com/yourusername/your-repo-name.git```
+Set Up Google Sheets:
+Create a main spreadsheet and individual hospital spreadsheets.
+Link the spreadsheets with the appropriate IDs in the script.
+Deploy Google Apps Script:
+Open the Google Apps Script editor.
+Paste the code from the code.gs file.
+Deploy the script as a web app.
 Usage
-Open the Web Application:
-
-Launch the web application from the script editor by clicking Deploy > Test deployments > Select type: Web app.
-Fill Out Client Profile:
-
-Input client details, including personal information and referral specifics.
-Submit Feedback:
-
-Collect feedback from clients regarding hospital services.
-Process Referrals:
-
-Automatically sorts data into the respective hospital sheets and generates referral letters.
-Real-Time Updates:
-
-Monitor updates in real-time from the main office.
-File Descriptions
-code.gs: Contains the main Google Apps Script code for the web application.
-2024_R1.json: Contains the links of R1s the Referral Letter Template, Individual Spreadsheet, and Folders for Organization.
-2024_R2.json: Contains the links of R2s the Referral Letter Template, Individual Spreadsheet, and Folders for Organization.
-2024_R3.json: Contains the links of R3s the Referral Letter Template, Individual Spreadsheet, and Folders for Organization.
-index.html: The HTML file for the web application interface.
-style.css: The CSS file for styling the web application.
-script.js: The JavaScript file for handling client-side logic.
-README.md: This file, providing an overview of the project.
-Technical Details
-Google Apps Script: Used for backend automation and interaction with Google Sheets and Google Docs.
-HTML/CSS/JavaScript: Used for creating a user-friendly web interface.
-JSON: Used for storing and retrieving hospital information and control numbers.
-Screenshots
-Include screenshots of the web application interface here.
-
+Language Selection:
+Users can select their preferred language (English or Filipino) on the initial screen.
+Client Profile:
+Fill in the client profile information.
+Feedback Questions:
+Complete the feedback questions.
+Acknowledgement:
+Review the acknowledgement page.
+Code Overview
+Main Functions
+handleGet: Handles GET requests and serves the HTML content.
+submitForm: Submits client profile data to the 'CLIENT PROFILE SHEET'.
+submitFeedback: Submits feedback data to the 'CSM SHEET'.
+sortDataToCentral: Sorts and transfers data from the main spreadsheet to regional hospital sheets.
+resetProperty: Resets script properties for hospital control numbers.
+Data Processing
+Duplicate Detection: Ensures no duplicate entries are recorded.
+Budget Management: Updates hospital budgets based on client referrals.
+Data Sorting: Transfers relevant data to individual hospital sheets.
+Utilities
+extractNameParts: Extracts and formats client names.
+formatDate: Formats dates to 'MM/dd/yyyy'.
 Contributing
-Contributions are welcome! Please fork the repository and submit pull requests for any improvements or bug fixes.
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
+
+Contact
+For any inquiries or support, please contact deanferrazzini@gmail.com.
